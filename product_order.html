@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<title>Product Order Form</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="scripts/utilities.js"></script>
+	<script src="scripts/product_order.js"></script>	
+</head>
+
+<body>
+	<h1>Product Order Form</h1>
+	<div id ="form">
+		<form id ="order_form">
+			<div id="current_datetime"></div>
+			<label for="product">Product</label>
+			<select id="product" name="product">
+				<option value=""></option>
+				<option value="ipad">iPad</option>
+				<option value="iphone">iPhone 6S</option>
+				<option value="moto">Moto X</option>
+				<option value="lg">LG Stylo</option>
+			</select><span id="err1"></span><br>
+			<label for="quantity">Quantity</label>
+			<input type="number" id="quantity" name="quantity"><span id="err2"></span><br>
+			<label for="unit_price">Unit Price</label>
+			<input type="number" id="unit_price" name="unit_price"><span id="err3"></span><br>
+			<label for="discount_rate">Discount Rate</label>
+			<input type="number" id="discount_rate" name="discount_rate"><span id="err4"></span><br>
+			<label for="order_date">Order Date</label>
+			<input type="date" id="order_date" name="order_date"><span id="err5"></span><br>
+			<label for="first_name">First Name</label>
+			<input type="text" id="first_name" name="first_name"><span id="err6"></span><br>
+			<label for="last_name">Last Name</label>
+			<input type="text" id="last_name" name="last_name"><span id="err7"></span><br>
+			<label for="payment_type">Payment Type</label>
+			<select id="payment_type" name="payment_type">
+				<option value=""></option>
+				<option value="visa">Visa</option>
+				<option value="master">Master</option>
+				<option value="discover">Discover</option>
+				<option value="amex">Amex</option>
+				<option value="express">American Express</option>
+			</select><span id="err8"></span><br>
+			<label for="card_number">Card Number</label>
+			<input type="text" id="card_number" name="card_number"><span id="err9"></span><br>
+			<label for="security_code">Security Code</label>
+			<input type="text" id="security_code" name="security_code"><span id="err10"></span><br>
+			<label for="comments">Comments</label>
+			<textarea id="comments" name="comments"></textarea><br><span id="count"></span><br>
+			<input type="button" id="reset" value="Reset"><br>
+			<input type="button" id="order_button" value="Place Order"><br>
+			<!--labels, text boxes, drop down list, and button should be inside the form tag--> 
+
+		</form>
+	</div>
+	<div id="output"></div>
+</body>
+<!-- To be used for part 2-->
+
+</html>

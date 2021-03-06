@@ -1,0 +1,17 @@
+#form {
+    margin-left: 40%;
+    margin-top: 40px;
+}
+
+body {
+    background-color: lawngreen;
+}
+
+h1 {
+    text-align: center;
+    font-family: sans-serif;
+}
+
+#output {
+    text-align: center;
+}
